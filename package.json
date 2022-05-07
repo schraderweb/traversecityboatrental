@@ -1,0 +1,19 @@
+{
+  "name": "traversecityboatrental",
+  "version": "1.0.0",
+  "description": "Traverse City Boat Rental",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schraderweb/traversecityboatrental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schraderweb/traversecityboatrental/issues"
+  },
+  "homepage": "https://github.com/schraderweb/traversecityboatrental#readme"
+}
