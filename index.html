@@ -8,6 +8,260 @@
     <title>Traverse City Boat Rental</title>
   </head>
   <body>
-    <h1 class="w-100 mt-4 text-center text-2xl">Welcome to TailwindCSS</h1>
+    <div class="h-[700px] bg-[url('/img/bg.jpg')]">
+      <nav class="mx-auto bg-primary/70 shadow">
+        <div
+          class="main-container mx-auto px-6 py-3 md:flex md:items-center md:justify-between"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <a
+                class="mx-auto text-xl font-bold text-gray-800 hover:text-gray-700 md:container md:text-2xl"
+                href="index.html"
+              >
+                <img src="img/logo.png" class="w-54 h-16 lg:h-12 lg:w-60" />
+              </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex md:hidden">
+              <button
+                type="button"
+                class="text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+                aria-label="toggle menu"
+                id="menuButton"
+              >
+                <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div class="hidden items-center md:flex" id="mainMenus">
+            <div class="flex flex-col md:mx-6 md:flex-row">
+              <a
+                class="my-1 border-b border-accent py-2 font-semibold text-white md:mx-4 md:my-0"
+                href="index.html"
+                >Home</a
+              >
+
+              <div class="group relative cursor-pointer py-2">
+                <a
+                  class="my-1 flex text-gray-100 hover:text-white md:mx-4 md:my-0"
+                  onClick=""
+                >
+                  Rental Locations
+                  <span class="ml-2 flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="invisible absolute z-50 flex w-auto flex-col bg-accent py-1 px-1 text-white group-hover:visible md:mt-2 md:w-48"
+                  onClick=""
+                >
+                  <a
+                    class="my-3 block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Silver Lake, MI</a
+                  >
+
+                  <a
+                    class="block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Long Lake, MI</a
+                  >
+                  <a
+                    class="block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Crystel Lake, MI</a
+                  >
+                  <a
+                    class="block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Duck Lake, MI</a
+                  >
+                  <a
+                    class="block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Green Lake, MI</a
+                  >
+                  <a
+                    class="block border-b border-gray-100 py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Lake Leelanau, MI</a
+                  >
+
+                  <a
+                    class="block py-1 text-gray-100 transition duration-700 hover:px-2 hover:text-white md:mx-2 md:my-0"
+                    >Glenn Lake, MI</a
+                  >
+                </div>
+              </div>
+
+              <a
+                class="my-1 py-2 text-gray-700 hover:text-white dark:text-gray-200 md:mx-4 md:my-0"
+                href="#"
+                >About Us</a
+              >
+              <a
+                class="my-1 py-2 text-gray-700 hover:text-white dark:text-gray-200 md:mx-4 md:my-0"
+                href="#"
+                >Pontoon Info</a
+              >
+              <a
+                class="my-1 py-2 text-gray-700 hover:text-white dark:text-gray-200 md:mx-4 md:my-0"
+                href="careers.html"
+                >Schedule Rental</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-container mt-28">
+        <h1
+          class="text-5xl font-bold text-white [text-shadow:2px_4px_3px_rgba(0,0,0,0.42)]"
+        >
+          Pontoon Boat Rental <br />
+          Traverse City, Silver Lake, <br />
+          Long Lake, Crystel Lake,<br />
+          Duck Lake & Green Lake
+        </h1>
+        <div class="mt-16">
+          <a
+            href="#"
+            class="rounded-md bg-accent px-5 py-3 text-xl text-white shadow-sm"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="main-container mt-4 flex items-center justify-center">
+      <span
+        class="w-auto border-b-2 border-accent py-3 text-center text-3xl font-semibold text-black"
+      >
+        Featured Rentals
+      </span>
+    </div>
+    <div class="main-container">
+      <div class="mt-10 flex justify-between space-x-10">
+        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+          <div class="">
+            <img src="img/pontoon1.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="px-6 py-3">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Long Lake Boat Rental
+            </h2>
+            <p class="font-seimbold mt-5 text-lg text-gray-800">$400</p>
+            <p class="mt-5">
+              We offer our pontoon boat rental on beautiful Long Lake. Long Lake
+              is just a short drive (About 9 miles West) from the Traverse City
+              area.
+            </p>
+            <div class="mt-10 flex justify-between">
+              <a
+                href="#"
+                class="rounded-md border-2 border-primary px-6 py-2 text-center font-semibold text-gray-900"
+              >
+                Learn More
+              </a>
+              <a
+                href="#"
+                class="text--cent rounded-md bg-primary py-2 px-6 text-gray-100"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+          <div class="">
+            <img src="img/pontoon3.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="px-6 py-3">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Long Lake Boat Rental
+            </h2>
+            <p class="font-seimbold mt-5 text-lg text-gray-800">$400</p>
+            <p class="mt-5">
+              We offer our pontoon boat rental on beautiful Long Lake. Long Lake
+              is just a short drive (About 9 miles West) from the Traverse City
+              area.
+            </p>
+            <div class="mt-10 flex justify-between">
+              <a
+                href="#"
+                class="rounded-md border-2 border-primary px-6 py-2 text-center font-semibold text-gray-900"
+              >
+                Learn More
+              </a>
+              <a
+                href="#"
+                class="text--cent rounded-md bg-primary py-2 px-6 text-gray-100"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+          <div class="">
+            <img src="img/pontoon2.jpg" class="w-full object-cover" alt="" />
+          </div>
+          <div class="px-6 py-3">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Long Lake Boat Rental
+            </h2>
+            <p class="font-seimbold mt-5 text-lg text-gray-800">$400</p>
+            <p class="mt-5">
+              We offer our pontoon boat rental on beautiful Long Lake. Long Lake
+              is just a short drive (About 9 miles West) from the Traverse City
+              area.
+            </p>
+            <div class="mt-10 flex justify-between">
+              <a
+                href="#"
+                class="rounded-md border-2 border-primary px-6 py-2 text-center font-semibold text-gray-900"
+              >
+                Learn More
+              </a>
+              <a
+                href="#"
+                class="text--cent rounded-md bg-primary py-2 px-6 text-gray-100"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flex max-h-80 w-full justify-between space-x-2 bg-primary">
+      <div class="w-1/2 py-4">
+        <div class="h-20 bg-white">
+          <h2>JET SKIING</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A numquam,
+          animi hic quis reprehenderit magni facilis beatae nobis odio eum
+          delectus harum totam perspiciatis molestiae voluptates temporibus
+          commodi? Voluptas, molestias.
+        </div>
+      </div>
+      <div class="w-1/2">
+        <img src="img/pontoon2.jpg" class="w-full object-cover" alt="" />
+      </div>
+    </div> -->
   </body>
 </html>

@@ -8,7 +8,7 @@
   }
 } */
 .main-container {
-  @apply w-full md:w-10/12 mx-auto px-2;
+  @apply mx-auto w-full px-2 md:max-w-7xl;
 }
 .inactive-menu {
   @apply text-lg text-white/80 hover:text-white;
