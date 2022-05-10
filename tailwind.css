@@ -7,8 +7,15 @@
     font-family: "Inter", "Roboto", sans-serif;
   }
 } */
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgb(243 244 246);
+  border-bottom: 25px solid transparent;
+}
 .main-container {
-  @apply mx-auto w-full px-2 md:max-w-7xl;
+  @apply mx-auto w-full px-2 md:w-10/12 lg:max-w-7xl;
 }
 .inactive-menu {
   @apply text-lg text-white/80 hover:text-white;
