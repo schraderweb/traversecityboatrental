@@ -8,7 +8,7 @@
     <title>Traverse City Boat Rental</title>
   </head>
   <body>
-    <div class="h-[700px] bg-[url('/img/bg.jpg')]">
+    <div class="h-[700px] bg-[url('/img/bg.jpg')] md:h-[700px]">
       <nav class="mx-auto bg-primary/70 shadow">
         <div
           class="main-container mx-auto px-6 py-3 md:flex md:items-center md:justify-between"
@@ -27,7 +27,7 @@
             <div class="flex md:hidden">
               <button
                 type="button"
-                class="text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+                class="text-gray-100 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
                 aria-label="toggle menu"
                 id="menuButton"
               >
@@ -130,16 +130,16 @@
         </div>
       </nav>
 
-      <div class="main-container mt-28">
+      <div class="main-container mt-20 md:mt-28">
         <h1
-          class="text-5xl font-bold text-white [text-shadow:2px_4px_3px_rgba(0,0,0,0.42)]"
+          class="px-3 text-3xl font-bold text-white [text-shadow:2px_4px_3px_rgba(0,0,0,0.42)] md:text-5xl"
         >
           Pontoon Boat Rental <br />
           Traverse City, Silver Lake, <br />
           Long Lake, Crystel Lake,<br />
           Duck Lake & Green Lake
         </h1>
-        <div class="mt-16">
+        <div class="mt-16 px-3">
           <a
             href="#"
             class="rounded-md bg-accent px-5 py-3 text-xl text-white shadow-sm"
@@ -156,8 +156,12 @@
       </span>
     </div>
     <div class="main-container">
-      <div class="mt-10 flex justify-between space-x-10">
-        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+      <div
+        class="mt-10 flex flex-col justify-between space-y-5 md:flex-row md:space-y-0 md:space-x-10"
+      >
+        <div
+          class="w-full rounded-md border border-gray-200 shadow-md md:w-1/3"
+        >
           <div class="">
             <img src="img/pontoon1.jpg" class="w-full object-cover" alt="" />
           </div>
@@ -187,7 +191,9 @@
             </div>
           </div>
         </div>
-        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+        <div
+          class="w-full rounded-md border border-gray-200 shadow-md md:w-1/3"
+        >
           <div class="">
             <img src="img/pontoon3.jpg" class="w-full object-cover" alt="" />
           </div>
@@ -217,7 +223,9 @@
             </div>
           </div>
         </div>
-        <div class="w-1/3 rounded-md border border-gray-200 shadow-md">
+        <div
+          class="w-full rounded-md border border-gray-200 shadow-md md:w-1/3"
+        >
           <div class="">
             <img src="img/pontoon2.jpg" class="w-full object-cover" alt="" />
           </div>
@@ -250,12 +258,12 @@
       </div>
     </div>
     <div
-      class="mt-5 flex max-h-[450px] w-full justify-between space-x-2 bg-primary"
+      class="mt-5 flex h-auto w-full flex-col justify-between space-x-0 bg-primary md:h-[450px] md:flex-row md:space-x-2"
     >
-      <div class="w-1/2 py-12 px-10">
-        <div class="mx-auto my-auto w-10/12 bg-white px-8 py-6">
+      <div class="w-full py-12 px-4 md:w-1/2 md:px-10">
+        <div class="mx-auto my-auto w-full bg-white px-8 py-6 md:w-10/12">
           <h2
-            class="text-center text-5xl font-bold text-primary [text-shadow:2px_4px_2px_rgba(0,0,0,0.42)]"
+            class="text-center text-3xl font-bold text-primary [text-shadow:2px_4px_2px_rgba(0,0,0,0.42)] md:text-5xl"
           >
             Jet Skiing
           </h2>
@@ -275,15 +283,15 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="w-full md:w-1/2">
         <img src="img/pontoon2.jpg" class="h-full w-full object-cover" alt="" />
       </div>
     </div>
     <div
-      class="mt-5 mb-5 flex max-h-[450px] w-full justify-between space-x-2 bg-white"
+      class="mt-5 mb-5 flex h-auto w-full flex-col justify-between space-x-2 bg-white md:max-h-[450px] md:flex-row"
     >
-      <div class="w-1/2 py-6 px-5">
-        <div class="mx-auto my-auto w-10/12 bg-white px-8 py-6">
+      <div class="w-full py-6 px-5 md:w-1/2">
+        <div class="mx-auto my-auto w-full bg-white px-8 py-6 md:w-10/12">
           <h2 class="text-center text-3xl font-bold">About Us</h2>
           <p class="mt-4">
             We offer the very best pontoon boat rental in Traverse City, Silver
@@ -302,7 +310,7 @@
           </p>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="flex w-full items-center justify-center text-center md:w-1/2">
         <img src="img/admin.png" class="w-8/12" alt="" />
       </div>
     </div>
@@ -311,11 +319,13 @@
         <h1 class="mt-10 text-center text-4xl font-bold text-white">
           Client's Feedback
         </h1>
-        <div class="my-10 mx-auto flex w-11/12 bg-white px-10 py-10">
-          <div class="w-1/2">
+        <div class="my-10 mx-auto flex w-full bg-white px-10 py-10 md:w-11/12">
+          <div class="hidden w-full md:block md:w-1/2">
             <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
           </div>
-          <div class="flex w-1/2 flex-col items-center justify-center">
+          <div
+            class="flex w-full flex-col items-center justify-center md:w-1/2"
+          >
             <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Reiciendis eligendi soluta voluptas totam architecto voluptatibus
@@ -328,11 +338,260 @@
                 >John Smith</span
               >
 
-              <span class="triangle-left absolute top-[35%] -left-10"> </span>
+              <span
+                class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+              >
+              </span>
             </p>
           </div>
         </div>
       </div>
     </div>
+    <div class="w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59890.35391610796!2d74.33475331393913!3d31.45849692965495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919016dfb7cbbbd%3A0x7e840388758ae317!2sFS%20Mart%20Super%20Store!5e0!3m2!1sen!2s!4v1652213236422!5m2!1sen!2s"
+        class="h-[500px] w-full"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <footer class="body-font bg-primary text-gray-100">
+      <div
+        class="main-container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
+      >
+        <div
+          class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="title-font flex items-center justify-center font-medium text-white md:justify-start"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="h-10 w-10 rounded-full bg-indigo-500 p-2 text-white"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              ></path>
+            </svg>
+            <span class="ml-3 text-xl">Rental Boats</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-100">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet
+            tenetur nesciunt, commodi reprehenderit officiis quas nostrum ad
+            dignissimos enim adipisci
+          </p>
+        </div>
+        <div
+          class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+        >
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-white"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >First Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Second Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Third Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Fourth Link</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-white"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >First Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Second Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Third Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Fourth Link</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-white"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >First Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Second Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Third Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Fourth Link</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2
+              class="title-font mb-3 text-sm font-medium tracking-widest text-white"
+            >
+              CATEGORIES
+            </h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >First Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Second Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Third Link</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-100 hover:text-white" href="#"
+                  >Fourth Link</a
+                >
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-900">
+        <div
+          class="main-container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row"
+        >
+          <p class="text-center text-sm text-gray-100 sm:text-left">
+            © 2022 Rental Boats
+          </p>
+          <span
+            class="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start"
+          >
+            <a class="text-gray-100">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-100">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-100">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-100">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menuButton = document.getElementById("menuButton");
+      var mainMenus = document.getElementById("mainMenus");
+      menuButton.onclick = function () {
+        mainMenus.classList.toggle("hidden");
+      };
+    </script>
   </body>
 </html>
