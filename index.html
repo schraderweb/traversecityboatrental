@@ -8,7 +8,10 @@
     <title>Traverse City Boat Rental</title>
   </head>
   <body>
-    <div class="h-[700px] bg-[url('/img/bg.jpg')] md:h-[700px]">
+    <div
+      class="min-h-full bg-[url('/img/bg.jpg')] bg-no-repeat md:h-[700px]"
+      style="background-size: 100%"
+    >
       <nav class="mx-auto bg-primary/70 shadow">
         <div
           class="main-container mx-auto px-6 py-3 md:flex md:items-center md:justify-between"
@@ -44,12 +47,6 @@
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
           <div class="hidden items-center md:flex" id="mainMenus">
             <div class="flex flex-col md:mx-6 md:flex-row">
-              <a
-                class="my-1 border-b border-accent py-2 font-semibold text-white md:mx-4 md:my-0"
-                href="index.html"
-                >Home</a
-              >
-
               <div class="group relative cursor-pointer py-2">
                 <a
                   class="my-1 flex text-gray-100 hover:text-white md:mx-4 md:my-0"
@@ -146,6 +143,9 @@
             >Book Now</a
           >
         </div>
+      </div>
+      <div class="relative bottom-0 mt-14 w-full bg-primary 2xl:-mt-8">
+        <img src="img/waves.png" class="absolute" width="100%" alt="" />
       </div>
     </div>
     <div class="main-container mt-4 flex items-center justify-center">
@@ -257,41 +257,49 @@
         </div>
       </div>
     </div>
-    <div
-      class="mt-5 flex h-auto w-full flex-col justify-between space-x-0 bg-primary md:h-[450px] md:flex-row md:space-x-2"
-    >
-      <div class="w-full py-12 px-4 md:w-1/2 md:px-10">
-        <div class="mx-auto my-auto w-full bg-white px-8 py-6 md:w-10/12">
-          <h2
-            class="text-center text-3xl font-bold text-primary [text-shadow:2px_4px_2px_rgba(0,0,0,0.42)] md:text-5xl"
-          >
-            Jet Skiing
-          </h2>
-          <p class="mt-4 text-lg">
-            No trip to the lake is complete without getting on the water with
-            family and friends! Enjoy a fun and memorable day on the water with
-            a high quality jet ski rental at affordable prices. Cruising around
-            on our Sea Doo GTI SE jet skis is a great way to spend the day!
-            Hourly and multi day rentals available.
-          </p>
-          <div class="mt-10 w-full">
-            <a
-              href="#"
-              class="block w-full bg-accent px-8 py-3 text-center text-lg text-white"
-              >Learn More</a
+    <div class="w-full bg-primary md:h-[500px]">
+      <div
+        class="mx-auto mt-5 flex h-auto w-full max-w-7xl flex-col justify-between space-x-0 md:flex-row md:space-x-2"
+      >
+        <div class="w-full max-w-7xl py-12 px-4 md:w-1/2 md:px-10">
+          <div class="mx-auto my-auto w-full bg-white px-8 py-6 md:w-10/12">
+            <h2
+              class="text-center text-3xl font-bold text-primary [text-shadow:2px_4px_2px_rgba(0,0,0,0.42)] md:text-5xl"
             >
+              Jet Skiing
+            </h2>
+            <p class="mt-4 text-lg">
+              No trip to the lake is complete without getting on the water with
+              family and friends! Enjoy a fun and memorable day on the water
+              with a high quality jet ski rental at affordable prices. Cruising
+              around on our Sea Doo GTI SE jet skis is a great way to spend the
+              day! Hourly and multi day rentals available.
+            </p>
+            <div class="mt-10 w-full">
+              <a
+                href="#"
+                class="block w-full bg-accent px-8 py-3 text-center text-lg text-white"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="w-full md:w-1/2">
-        <img src="img/pontoon2.jpg" class="h-full w-full object-cover" alt="" />
+        <div class="my-auto h-full w-full md:w-1/2">
+          <img
+            src="img/pontoon2.jpg"
+            class="h-full w-full object-cover"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <div
-      class="mt-5 mb-5 flex h-auto w-full flex-col justify-between space-x-2 bg-white md:max-h-[450px] md:flex-row"
+      class="mx-auto mt-5 mb-5 flex h-auto w-full max-w-7xl flex-col justify-between space-x-2 bg-white md:max-h-[500px] md:flex-row"
     >
       <div class="w-full py-6 px-5 md:w-1/2">
-        <div class="mx-auto my-auto w-full bg-white px-8 py-6 md:w-10/12">
+        <div
+          class="mx-auto my-auto h-full w-full bg-white px-8 py-6 md:w-10/12"
+        >
           <h2 class="text-center text-3xl font-bold">About Us</h2>
           <p class="mt-4">
             We offer the very best pontoon boat rental in Traverse City, Silver
@@ -310,7 +318,9 @@
           </p>
         </div>
       </div>
-      <div class="flex w-full items-center justify-center text-center md:w-1/2">
+      <div
+        class="my-auto flex max-h-full w-full items-center justify-center text-center md:w-1/2"
+      >
         <img src="img/admin.png" class="w-8/12" alt="" />
       </div>
     </div>
@@ -347,10 +357,10 @@
         </div>
       </div>
     </div>
-    <div class="w-full">
+    <div class="mx-auto min-w-full bg-white">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59890.35391610796!2d74.33475331393913!3d31.45849692965495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919016dfb7cbbbd%3A0x7e840388758ae317!2sFS%20Mart%20Super%20Store!5e0!3m2!1sen!2s!4v1652213236422!5m2!1sen!2s"
-        class="h-[500px] w-full"
+        class="mx-auto h-[500px] w-full"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
