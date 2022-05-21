@@ -9,8 +9,8 @@
   </head>
   <body>
     <div
-      class="min-h-full bg-[url('/img/bg.jpg')] bg-no-repeat md:h-[700px]"
-      style="background-size: 100%"
+      class="bg-[url('/img/bg.jpg')] pb-10 bg-no-repeat md:h-[700px]"
+      style="background-size: 100% 100%"
     >
       <nav class="mx-auto bg-primary/70 shadow">
         <div
@@ -130,16 +130,16 @@
         </div>
       </nav>
 
-      <div class="main-container mt-20 md:mt-28">
+      <div class="main-container mt-5 md:mt-28">
         <h1
-          class="px-3 text-3xl font-bold text-white [text-shadow:2px_4px_3px_rgba(0,0,0,0.42)] md:text-5xl"
+          class="px-3 text-2xl font-bold text-white [text-shadow:2px_4px_3px_rgba(0,0,0,0.42)] md:text-5xl"
         >
           Pontoon Boat Rental <br />
           Traverse City, Silver Lake, <br />
           Long Lake, Crystel Lake,<br />
           Duck Lake & Green Lake
         </h1>
-        <div class="mt-16 px-3">
+        <div class="mt-5 md:mt-16 px-3">
           <a
             href="#"
             class="rounded-md bg-accent px-5 py-3 text-xl text-white shadow-sm"
@@ -147,7 +147,9 @@
           >
         </div>
       </div>
-      <div class="relative bottom-0 mt-14 w-full bg-primary 2xl:-mt-8">
+      <div
+        class="hidden md:block relative bottom-0 mt-8 w-full bg-primary 2xl:-mt-8"
+      >
         <img src="img/waves.png" class="absolute" width="100%" alt="" />
       </div>
     </div>
@@ -332,30 +334,175 @@
         <h1 class="mt-10 text-center text-4xl font-bold text-white">
           Client's Feedback
         </h1>
-        <div class="my-10 mx-auto flex w-full bg-white px-10 py-10 md:w-11/12">
-          <div class="hidden w-full md:block md:w-1/2">
-            <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
+        <div
+          class="my-10 overflow-x-hidden mx-auto flex-col flex w-full bg-white px-10 py-10 md:w-11/12"
+        >
+          <div class="inactive-slider" id="one">
+            <div class="hidden w-full md:block md:w-1/2">
+              <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
+            </div>
+
+            <div
+              class="flex w-full flex-col items-center justify-center md:w-1/2"
+            >
+              <div class="px-2 py-2"></div>
+              <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
+                <img
+                  src="img/Five_star_insignia.png"
+                  class="w-28 mb-4"
+                  alt=""
+                />
+                this is the second one and I can only tell you voluptas totam
+                architecto voluptatibus quo doloribus amet commodi temporibus
+                asperiores exercitationem, officiis repellendus, voluptatem
+                aperiam, labore porro alias? Quia.
+                <br />
+                <span
+                  class="text-end flex items-end justify-end py-2 font-semibold"
+                  >John Rees</span
+                >
+
+                <span
+                  class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+                >
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="active-slider" id="two">
+            <div class="hidden w-full md:block md:w-1/2">
+              <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
+            </div>
+
+            <div
+              class="flex w-full flex-col items-center justify-center md:w-1/2"
+            >
+              <div class="px-2 py-2"></div>
+              <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
+                <img
+                  src="img/Five_star_insignia.png"
+                  class="w-28 mb-4"
+                  alt=""
+                />
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis eligendi soluta voluptas totam architecto
+                voluptatibus quo doloribus amet commodi temporibus asperiores
+                exercitationem, officiis repellendus, voluptatem aperiam, labore
+                porro alias? Quia.
+                <br />
+                <span
+                  class="text-end flex items-end justify-end py-2 font-semibold"
+                  >John Smith</span
+                >
+
+                <span
+                  class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+                >
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="inactive-slider" id="three">
+            <div class="hidden w-full md:block md:w-1/2">
+              <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
+            </div>
+
+            <div
+              class="flex w-full flex-col items-center justify-center md:w-1/2"
+            >
+              <div class="px-2 py-2"></div>
+              <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
+                <img
+                  src="img/Five_star_insignia.png"
+                  class="w-28 mb-4"
+                  alt=""
+                />
+                This is the thrid one okay? Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Reiciendis eligendi soluta
+                voluptas totam architecto voluptatibus quo doloribus amet
+                commodi temporibus asperiores exercitationem, officiis
+                repellendus, voluptatem aperiam, labore porro alias? Quia.
+                <br />
+                <span
+                  class="text-end flex items-end justify-end py-2 font-semibold"
+                  >John Doe</span
+                >
+
+                <span
+                  class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+                >
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="inactive-slider" id="four">
+            <div class="hidden w-full md:block md:w-1/2">
+              <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
+            </div>
+
+            <div
+              class="flex w-full flex-col items-center justify-center md:w-1/2"
+            >
+              <div class="px-2 py-2"></div>
+              <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
+                <img
+                  src="img/Five_star_insignia.png"
+                  class="w-28 mb-4"
+                  alt=""
+                />
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis eligendi soluta voluptas totam architecto
+                voluptatibus quo doloribus amet commodi temporibus asperiores
+                exercitationem, officiis repellendus, voluptatem aperiam, labore
+                porro alias? Quia.
+                <br />
+                <span
+                  class="text-end flex items-end justify-end py-2 font-semibold"
+                  >John Smith</span
+                >
+
+                <span
+                  class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+                >
+                </span>
+              </p>
+            </div>
           </div>
           <div
-            class="flex w-full flex-col items-center justify-center md:w-1/2"
+            class="w-full flex space-x-20 text-gray-500 items-center justify-center mt-10"
           >
-            <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Reiciendis eligendi soluta voluptas totam architecto voluptatibus
-              quo doloribus amet commodi temporibus asperiores exercitationem,
-              officiis repellendus, voluptatem aperiam, labore porro alias?
-              Quia.
-              <br />
-              <span
-                class="text-end flex items-end justify-end py-2 font-semibold"
-                >John Smith</span
+            <div class="" id="prevButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
               >
-
-              <span
-                class="triangle-left absolute top-[35%] -left-10 hidden md:block"
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </div>
+            <span class="" id="nextButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
               >
-              </span>
-            </p>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
@@ -370,7 +517,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-
+    <div class="ml-[1500px]"></div>
     <footer class="body-font bg-primary text-gray-100">
       <div
         class="main-container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
@@ -602,8 +749,55 @@
     <script>
       var menuButton = document.getElementById("menuButton");
       var mainMenus = document.getElementById("mainMenus");
-      menuButton.onclick = function () {
+      menuButton.onclick = () => {
         mainMenus.classList.toggle("hidden");
+      };
+
+      let slide = 1;
+
+      const prevButton = document.querySelector("#prevButton");
+      let currentSliderElement = document.getElementById("two");
+      let nextSibling = currentSliderElement.nextElementSibling;
+      let prevSibling = currentSliderElement.previousElementSibling;
+      const nextButton = document.getElementById("nextButton");
+      nextButton.addEventListener("click", () => {
+        if (slide !== 3) {
+          slide++;
+          currentSliderElement.classList.add("ml-[1500px]", "inactive-slider");
+          currentSliderElement.classList.remove("active-slider");
+          nextSibling.classList.remove("inactive-slider", "ml-[1500px]");
+          nextSibling.classList.add("active-slider");
+          prevSibling = currentSliderElement;
+          currentSliderElement = nextSibling;
+          nextSibling = currentSliderElement.nextElementSibling;
+        }
+      });
+      prevButton.addEventListener("click", () => {
+        if (slide !== 1) {
+          slide--;
+          currentSliderElement.classList.add("ml-[1500px]", "inactive-slider");
+          currentSliderElement.classList.remove("active-slider");
+          prevSibling.classList.remove("inactive-slider", "ml-[1500px]");
+          prevSibling.classList.add("active-slider");
+          nextSibling = currentSliderElement;
+          currentSliderElement = prevSibling;
+          prevSibling = currentSliderElement.nextElementSibling;
+        }
+      });
+
+      prevButton.addEventListener("click", forwardSlider);
+
+      const forwardSlider = () => {
+        console.log("clicked");
+        console.log("element ", currentSliderElement);
+        currentSliderElement.classList.add("ml-[1500px]");
+        nextSibling.classList.remove("hidden");
+        nextSibling.classList.remove("flex ml-[1500px]");
+      };
+      const reverseSlider = () => {
+        currentSliderElement.classList.add("ml-[1500px]");
+        nextSibling.classList.remove("hidden");
+        nextSibling.classList.remove("flex ml-[1500px]");
       };
     </script>
   </body>

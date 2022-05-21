@@ -14,6 +14,12 @@
   border-right: 50px solid rgb(243 244 246);
   border-bottom: 25px solid transparent;
 }
+.inactive-slider {
+  @apply px-2 hidden ml-[1500px] w-full transition-all duration-1000;
+}
+.active-slider {
+  @apply px-2 flex ml-0 w-full transition-all duration-1000;
+}
 .main-container {
   @apply mx-auto w-full px-2 md:w-10/12 lg:max-w-7xl;
 }
