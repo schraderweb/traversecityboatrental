@@ -334,7 +334,7 @@
         <div
           class="my-10 mx-auto flex w-full flex-col overflow-x-hidden bg-white px-10 py-10 md:w-11/12"
         >
-          <div class="inactive-slider" id="one">
+          <div class="slides inactive-slider" id="one">
             <div class="hidden w-full md:block md:w-1/2">
               <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
             </div>
@@ -346,7 +346,9 @@
               <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
                 <img
                   src="img/Five_star_insignia.png"
-                  class="mb-4 w-32"
+                  class="mb-4"
+                  width="300"
+                  height="20"
                   alt=""
                 />
                 this is the second one and I can only tell you voluptas totam
@@ -366,7 +368,7 @@
               </p>
             </div>
           </div>
-          <div class="active-slider" id="two">
+          <div class="slides inactive-slider" id="two">
             <div class="hidden w-full md:block md:w-1/2">
               <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
             </div>
@@ -378,7 +380,9 @@
               <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
                 <img
                   src="img/Five_star_insignia.png"
-                  class="mb-4 w-32"
+                  class="mb-4"
+                  width="300"
+                  height="20"
                   alt=""
                 />
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -399,7 +403,7 @@
               </p>
             </div>
           </div>
-          <div class="inactive-slider" id="three">
+          <div class="slides inactive-slider" id="three">
             <div class="hidden w-full md:block md:w-1/2">
               <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
             </div>
@@ -411,7 +415,9 @@
               <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
                 <img
                   src="img/Five_star_insignia.png"
-                  class="mb-4 w-32"
+                  class="mb-4"
+                  width="300"
+                  height="20"
                   alt=""
                 />
                 This is the thrid one okay? Lorem ipsum dolor sit, amet
@@ -432,7 +438,7 @@
               </p>
             </div>
           </div>
-          <div class="inactive-slider" id="four">
+          <div class="slides inactive-slider" id="four">
             <div class="hidden w-full md:block md:w-1/2">
               <img src="img/person.png" class="mx-auto block w-6/12" alt="" />
             </div>
@@ -444,7 +450,9 @@
               <p class="relative my-auto bg-gray-100 px-5 py-5 shadow-md">
                 <img
                   src="img/Five_star_insignia.png"
-                  class="mb-4 w-32"
+                  class="mb-4"
+                  width="300"
+                  height="20"
                   alt=""
                 />
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -750,50 +758,24 @@
         mainMenus.classList.toggle("hidden");
       };
 
-      let slide = 2;
+      let slideIndex = 0;
+      showSlides();
 
-      const prevButton = document.querySelector("#prevButton");
-      let currentSliderElement = document.getElementById("two");
-      let nextSibling = currentSliderElement.nextElementSibling;
-      let prevSibling = currentSliderElement.previousElementSibling;
-      const nextButton = document.getElementById("nextButton");
-      nextButton.addEventListener("click", () => {
-        if (slide !== 3) {
-          slide++;
-          currentSliderElement.classList.add("ml-[1500px]", "inactive-slider");
-          currentSliderElement.classList.remove("active-slider");
-          nextSibling.classList.remove("inactive-slider", "ml-[1500px]");
-          nextSibling.classList.add("active-slider");
-          prevSibling = currentSliderElement;
-          currentSliderElement = nextSibling;
-          nextSibling = currentSliderElement.nextElementSibling;
+      function showSlides() {
+        let i;
+        let slides = document.querySelectorAll(".slides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].classList.add("inactive-slider");
+          slides[i].classList.add("flex");
         }
-      });
-      prevButton.addEventListener("click", () => {
-        if (slide !== 1) {
-          slide--;
-          currentSliderElement.classList.add("ml-[1500px]", "inactive-slider");
-          currentSliderElement.classList.remove("active-slider");
-          prevSibling.classList.remove("inactive-slider", "ml-[1500px]");
-          prevSibling.classList.add("active-slider");
-          nextSibling = currentSliderElement;
-          currentSliderElement = prevSibling;
-          prevSibling = currentSliderElement.nextElementSibling;
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
         }
-      });
 
-      prevButton.addEventListener("click", forwardSlider);
-
-      const forwardSlider = () => {
-        currentSliderElement.classList.add("ml-[1500px]");
-        nextSibling.classList.remove("hidden");
-        nextSibling.classList.remove("flex ml-[1500px]");
-      };
-      const reverseSlider = () => {
-        currentSliderElement.classList.add("ml-[1500px]");
-        nextSibling.classList.remove("hidden");
-        nextSibling.classList.remove("flex ml-[1500px]");
-      };
+        slides[slideIndex - 1].classList.remove("inactive-slider");
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
     </script>
   </body>
 </html>
